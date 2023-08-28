@@ -3,7 +3,7 @@
 
 ## Task
 
-1. The task is to create "Fuel Calculator" as Drupal module. In form it should have "Distance Traveled", "Fuel Consumption" and "Price Per Liter". Once this data is entered to our form after we press calculate button it should give us results  in separate result block "Fuel spent" and "Fuel cost". Also we need to have reset button to be able to reset our data.
+1. The task is to create "Fuel Calculator" as Drupal module.
 2. Primary / Default values should be defined in the module as Drupal config install feature.
 3. It should be possible to use calculator as separate page or embed block
 4. Calculations should be executed in back end after submission.
@@ -15,36 +15,7 @@
 
 ## Usage
 
-For a brief introduction, see [USAGE.txt](/core/USAGE.txt). You can also find
-guides, API references, and more by visiting Drupal's [documentation
-page][documentation].
-
-You can quickly extend Drupal's core feature set by installing any of its
-[thousands of free and open source modules][modules]. With Drupal and its
-module ecosystem, you can often build most or all of what your project needs
-before writing a single line of code.
-
-## Changelog
-
-Drupal keeps detailed [change records][changelog]. You can search Drupal's
-changes for a record of every notable breaking change and new feature since
-2011.
-
-## Security
-
-For a list of security announcements, see the [Security advisories
-page][Security advisories] (available as [an RSS feed][security RSS]). This
-page also describes how to subscribe to these announcements via email.
-
-For information about the Drupal security process, or to find out how to report
-a potential security issue to the Drupal security team, see the [Security team
-page][security team].
-
-## Need a helping hand?
-
-Visit the [Support page][support] or browse [over a thousand Drupal
-providers][service providers] offering design, strategy, development, and
-hosting services.
+Coming soon
 
 ## Legal matters
 
