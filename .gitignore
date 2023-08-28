@@ -1,0 +1,31 @@
+# Ignore core and contributed modules
+/core/
+/modules/contrib/
+
+/node_modules
+/.vscode
+.DS_Store
+
+# Ignore generated files
+/sites/*/files/
+/sites/*/private/
+
+# Ignore configuration files
+/sites/*/settings.php
+/sites/*/services.yml
+
+# Ignore development files
+/node_modules/
+/vendor/
+
+# Ignore logs and caches
+/sites/*/files/php/
+/sites/*/files/css/
+/sites/*/files/js/
+/sites/*/files/images/
+/sites/*/files/styles/
+
+# Ignore local development environment files
+/sites/default/settings.local.php
+/sites/default/services.local.yml
+/sites/default/development.services.yml

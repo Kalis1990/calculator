@@ -1,0 +1,23 @@
+name: 'Calculator'
+type: module
+core_version_requirement: ^9
+description: 'Code to spark my module development understanding'
+package: 'Calculator'
+dependencies:
+  - core:rest
+  - core:basic_auth
+  
+services:
+  logger.channel.fuel_calculator:
+    class: Drupal\Core\Logger\LoggerChannel
+    arguments: ['fuel_calculator', {name: 'fuel_calculator', handlers: ['syslog']}]
+scripts:
+  - sites/default/js/fuel_calculator.js: {}
+
+fuel_calculator.page:
+  path: '/fuel-calculator'
+  defaults:
+    _controller: '\Drupal\fuel_calculator\Controller\FuelCalculatorPageController::content'
+  requirements:
+    _permission: 'access content'
+

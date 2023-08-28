@@ -1,0 +1,25 @@
+<?php 
+// use Drupal\Core\Routing\RouteMatchInterface;
+// use Drupal\Core\Form\FormStateInterface;
+
+
+// /**
+//  * Implements hook_form_FORM_ID_alter() for your form.
+//  */
+// function fuel_calculator_form_fuel_calculator_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+//   $form['#attached']['library'][] = 'fuel_calculator/fuel-calculator-js';
+// }
+
+// /**
+//  * Implements hook_library_info().
+//  */
+// function fuel_calculator_library_info() {
+//   return [
+//     'fuel_calculator/fuel-calculator-js' => [
+//       'js' => [
+//         'js/fuel-calculator.js' => [],
+//       ],
+//     ],
+//   ];
+// }
+
