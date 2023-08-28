@@ -4,14 +4,6 @@ namespace Drupal\fuel_calculator\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 
-/**
- * Provides a 'Fuel Calculator Results' block.
- *
- * @Block(
- *   id = "fuel_calculator_results_block",
- *   admin_label = @Translation("Fuel Calculator Results Block"),
- * )
- */
 namespace Drupal\fuel_calculator\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
