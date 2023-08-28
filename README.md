@@ -1,23 +1,17 @@
 <img alt="Drupal Logo" src="https://www.drupal.org/files/Wordmark_blue_RGB.png" height="60px">
 
-Drupal is an open source content management platform supporting a variety of
-websites ranging from personal weblogs to large community-driven websites. For
-more information, visit the Drupal website, [Drupal.org][Drupal.org], and join
-the [Drupal community][Drupal community].
 
-## Contributing
+## Task
 
-Drupal is developed on [Drupal.org][Drupal.org], the home of the international
-Drupal community since 2001!
-
-[Drupal.org][Drupal.org] hosts Drupal's [GitLab repository][GitLab repository],
-its [issue queue][issue queue], and its [documentation][documentation]. Before
-you start working on code, be sure to search the [issue queue][issue queue] and
-create an issue if your aren't able to find an existing issue.
-
-Every issue on Drupal.org automatically creates a new community-accessible fork
-that you can contribute to. Learn more about the code contribution process on
-the [Issue forks & merge requests page][issue forks].
+1. The task is to create "Fuel Calculator" as Drupal module. In form it should have "Distance Traveled", "Fuel Consumption" and "Price Per Liter". Once this data is entered to our form after we press calculate button it should give us results  in separate result block "Fuel spent" and "Fuel cost". Also we need to have reset button to be able to reset our data.
+2. Primary / Default values should be defined in the module as Drupal config install feature.
+3. It should be possible to use calculator as separate page or embed block
+4. Calculations should be executed in back end after submission.
+5. Input fields should have validations
+6. Drupal service should be used for calculations.
+7. It should be possible to prefill the calculator with additional parameters in the URL address
+8. Web service "Rest API" should be implemented to receive Fuel spent and Fuel cost values after values submission.
+9. Calculations should be saved in Drupal logs (ip address, username, calculation input values and result values.
 
 ## Usage
 
