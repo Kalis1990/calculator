@@ -33,6 +33,8 @@ class FuelCalculatorForm extends FormBase {
       '#type' => 'number',
       '#title' => $this->t('Fuel Consumption'),
       '#required' => TRUE,
+      '#step' => '0.01',  
+
     ];
 
     $form['price_per_liter'] = [
