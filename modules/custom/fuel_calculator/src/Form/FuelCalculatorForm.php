@@ -22,11 +22,21 @@ class FuelCalculatorForm extends FormBase {
    */
   
   public function buildForm(array $form, FormStateInterface $form_state) {
+
+    $config = $this->config('fuel_calculator.settings');
+
+  // Get the default values from the configuration.
+    $default_distance = $config->get('default_distance');
+    $default_fuel = $config->get('default_fuel');
+    $default_price_per_liter = $config->get('default_price_per_liter');
+
     // Form elements
     $form['distance'] = [
       '#type' => 'number',
       '#title' => $this->t('Distance Traveled'),
       '#required' => TRUE,
+      '#default_value' => $default_distance, 
+  
     ];
     
     $form['fuel'] = [
@@ -34,7 +44,8 @@ class FuelCalculatorForm extends FormBase {
       '#title' => $this->t('Fuel Consumption'),
       '#required' => TRUE,
       '#step' => '0.01',  
-
+      '#default_value' => $default_fuel,
+  
     ];
 
     $form['price_per_liter'] = [
@@ -42,6 +53,8 @@ class FuelCalculatorForm extends FormBase {
       '#title' => $this->t('Price Per Liter'),
       '#required' => TRUE,
       '#step' => '0.01',  
+      '#default_value' => $default_price_per_liter,
+  
     ];
     
     
@@ -100,10 +113,10 @@ class FuelCalculatorForm extends FormBase {
 
     \Drupal::state()->set('fuel_calculator.fuel_consumption', $fuel_consumption);
     \Drupal::state()->set('fuel_calculator.fuel_spend', $fuel_spend);
-      $js_data = [
-        'fuel_consumption' => $fuel_consumption,
-        'fuel_spend' => $fuel_spend,
-      ];
+      // $js_data = [
+      //   'fuel_consumption' => $fuel_consumption,
+      //   'fuel_spend' => $fuel_spend,
+      // ];
     
       // Attach data to drupalSettings
     //   $form_state->set('fuel_calculator_js_data', $js_data);
