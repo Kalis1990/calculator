@@ -8,11 +8,6 @@ dependencies:
   - core:basic_auth
 config_install:
   - fuel_calculator.settings
-config:
-  fuel_calculator.settings:
-    default_distance: 10
-    default_fuel: 5
-    default_price_per_liter: 1.5
 
   
 services:
