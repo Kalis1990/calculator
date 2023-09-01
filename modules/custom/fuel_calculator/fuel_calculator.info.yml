@@ -22,10 +22,10 @@ services:
 # scripts:
 #   - sites/default/js/fuel_calculator.js: {}
 
-fuel_calculator.page:
-  path: '/fuel-calculator'
-  defaults:
-    _controller: '\Drupal\fuel_calculator\Controller\FuelCalculatorPageController::content'
-  requirements:
-    _permission: 'access content'
+# fuel_calculator.page:
+#   path: '/fuel-calculator'
+#   defaults:
+#     _controller: '\Drupal\fuel_calculator\Controller\FuelCalculatorPageController::content'
+#   requirements:
+#     _permission: 'access content'
 
